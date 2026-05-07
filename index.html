@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>One-Screen World Update</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b0d12">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="pnglogowhite.png" alt="WorldPulse Logo" class="logo" />
+  <div class="small" id="date"></div>
+</header>
+
+<div class="grid">
+
+  <!-- NEWS -->
+  <section class="section">
+    <div class="section-title">🌍 World News</div>
+
+    <div class="card">
+      <div class="title">BBC</div>
+      <div id="bbc"></div>
+    </div>
+
+    <div class="card">
+      <div class="title">Al Jazeera</div>
+      <div id="aljazeera"></div>
+    </div>
+
+    <div class="card">
+      <div class="title">France 24</div>
+      <div id="france24"></div>
+    </div>
+
+    <div class="card">
+      <div class="title">DW</div>
+      <div id="dw"></div>
+    </div>
+  </section>
+
+  <!-- WEATHER -->
+  <section class="section">
+    <div class="section-title">☀️ Weather</div>
+
+    <div class="card">
+      <div id="weather"></div>
+    </div>
+  </section>
+
+  <!-- CURRENCY -->
+  <section class="section">
+    <div class="section-title" id="fx-title">💱 Currency Exchange</div>
+
+    <div class="card">
+      <div id="fx" class="fx-grid"></div>
+    </div>
+  </section>
+
+  <!-- REFRESH -->
+  <section class="section">
+    <div class="card">
+      <button onclick="refreshAll()">🔄 Refresh</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
